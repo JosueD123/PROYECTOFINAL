@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* General */
+    "target": "es2016",                                  /* Compatibilidad con ES6+ */
+    "module": "commonjs",                                /* CommonJS para Node.js */
+    "outDir": "./dist",                                  /* Carpeta de salida para los archivos compilados */
+    "rootDir": "./src",                                  /* Carpeta raíz de los archivos fuente */
+    "strict": true,                                      /* Activar todas las opciones estrictas de TypeScript */
+    "esModuleInterop": true,                             /* Permitir interoperabilidad con módulos CommonJS */
+    "forceConsistentCasingInFileNames": true,            /* Asegurar que el casing sea consistente en imports */
+    "skipLibCheck": true,                                /* Omitir verificación de tipos en archivos de biblioteca */
+
+    /* Modulos */
+    "moduleResolution": "node",                          /* Resolver módulos como Node.js */
+    "resolveJsonModule": true,                           /* Permitir importar archivos JSON */
+
+    /* Emisión */
+    "declaration": true,                                 /* Generar archivos .d.ts para cada archivo TypeScript */
+    "sourceMap": true,                                   /* Crear archivos de mapa de código fuente para depuración */
+    "removeComments": true,                              /* Eliminar comentarios en el código compilado */
+
+    /* Opciones adicionales de control estricto */
+    "noImplicitAny": true,                               /* Evitar tipos 'any' implícitos */
+    "strictNullChecks": true,                            /* Considerar null y undefined como valores separados */
+    "noUnusedLocals": true,                              /* Reportar variables locales no usadas */
+    "noUnusedParameters": true,                          /* Reportar parámetros de función no usados */
+    "noImplicitReturns": true,                           /* Reportar si falta una declaración return en una función */
+    "noFallthroughCasesInSwitch": true                   /* Evitar el fallo involuntario en casos de switch */
+  },
+  "include": ["src"],                                    /* Incluir todos los archivos TypeScript en src */
+  "exclude": ["node_modules", "dist"]                    /* Excluir node_modules y la carpeta dist */
+}
